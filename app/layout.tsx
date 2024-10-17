@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import {Roboto, Inter} from "next/font/google"
-
+import { ReactNode } from "react";
 
 const roboto = Roboto({
   style: "normal",
@@ -16,13 +16,13 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Whisper Ads",
-  description: "Unlock the Power of WhatsApp Marketing. Advertise to thousands or monetize your status updates with Whisper.io.",
+  description: "Whisper is a platform that allows you to monetize your WhatsApp status. Whether you're an advertiser looking to promote your product or an agent looking to earn money, Whisper has got you covered.",
 };
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: ReactNode;
 }>) {
   return (
     <html lang="en">

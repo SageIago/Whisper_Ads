@@ -9,11 +9,22 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        primary: {
+          100: "#009444",
+          200: "#040815",
+          300: "#FFFFFF",
+          400: "#050505"
+        },
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        inter: ["var(--font-inter)"],
+        Roboto: ["var(--font-Roboto)"]
+      }
     },
   },
-  plugins: [],
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
+  plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],
 };
 export default config;
