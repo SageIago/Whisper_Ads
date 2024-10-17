@@ -1,27 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+  .flex-between {
+    @apply flex justify-between items-center;
+  }
+
+  .flex-end {
+    @apply flex justify-end items-center;
+  }
+
+  .h1_bold {
+    @apply text-white font-bold leading-[54px] text-[36px] tracking-tighter;
+  }
+
+  .h2_bold {
+    @apply text-primary-300 font-[500] text-[24px] leading-[36px];
+  }
+
+  .h2_semi-bold {
+    @apply text-primary-200 font-semibold text-[24px] leading-[36px];
+  }
+
+  .h3_bold {
+    @apply text-primary-200 font-[500] text-[14px] leading-[18.56px] tracking-tighter;
+  }
+
+  .h3-carasouel {
+    @apply text-primary-400 font-bold leading-[10.07px] text-[13.11px];
+  }
+
+  .paragraph-regular {
+    @apply font-[400] text-[14px] leading-[21px];
+  }
+
+  .btn {
+    @apply bg-primary-300 text-black !important;
+  }
+
+  .btn-primary {
+    @apply bg-primary-100 text-primary-300;
+  }
+
+  .btn-secondary {
+    @apply bg-transparent border-primary-300 text-primary-300;
+  }
+
+  .tags {
+    @apply w-[85.42px] h-[18.71px] rounded-[1.86px] text-primary-300;
   }
 }
