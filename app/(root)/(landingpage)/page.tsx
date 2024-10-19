@@ -1,9 +1,15 @@
+import HeroSection from "@/components/shared/HeroSection/HeroSection"
+import Navbar from "@/components/shared/Navbar/Navbar"
 
 
 const Home = () => {
   return (
     <div id="HomePage" className="font-inter  font-bold text-primary-200">
-        Welcome to Whisper Ads
+        <Navbar />
+
+        <div id="sections">
+            <HeroSection />
+        </div>
     </div>
   )
 }
