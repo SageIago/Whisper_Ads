@@ -1,3 +1,4 @@
+import Features from "@/components/shared/FeatureSection/Features"
 import HeroSection from "@/components/shared/HeroSection/HeroSection"
 import Navbar from "@/components/shared/Navbar/Navbar"
 
@@ -9,6 +10,7 @@ const Home = () => {
 
         <div id="sections">
             <HeroSection />
+            <Features />
         </div>
     </div>
   )

@@ -1,17 +1,34 @@
+import FeatureImage from "@/app/assets/images/Group 427320630.png";
+import BenefitsList from "@/constant";
+import Image from "next/image";
+import FeatureCard from "./FeatureCard";
+
 const Features = () => {
   return (
-    <section className="section_padding">
-      <div id="Features_Image"></div>
+    <section className="section_padding flex-between flex-col">
+      <div id="Features_Image">
+        <Image src={FeatureImage} alt="Features" />
+      </div>
 
-      <div id="Features-Content">
-        <h2 className="h2_bold">Why Use Whisper.io</h2>
+      <div className="mt-10 h-[465px]" id="Features-Content">
+        <h2 className="h2_semi-bold mb-1.5 font-inter">Why Use Whisper.io</h2>
         <p className="paragraph-regular">
           Our platform helps businesses get the visibility they deserve while
           providing flexible and hassle-free earning opportunity for agents.
         </p>
 
-        <div id="Benefits">
-            <h3 className="h3_bold">Benefits</h3>
+        <h3 className="h3_bold mt-3">Benefits</h3>
+
+        <div id="Benefits" className="flex-between mt-3 flex-col">
+          {BenefitsList.map((benefits, index) => (
+            <FeatureCard
+              key={index}
+              tags={benefits.tags}
+              imgURL={benefits.imageURL}
+              heading={benefits.heading}
+              paragraph={benefits.paragraph}
+            />
+          ))}
         </div>
       </div>
     </section>

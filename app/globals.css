@@ -35,7 +35,7 @@ body {
   }
 
   .h3_bold {
-    @apply text-primary-200 font-[500] text-[14px] leading-[18.56px] tracking-tighter;
+    @apply text-primary-200 font-semibold text-[16px] leading-[18.56px] tracking-tighter;
   }
 
   .h3-carasouel {
@@ -59,7 +59,7 @@ body {
   }
 
   .tags {
-    @apply w-[85.42px] h-[18.71px] rounded-[1.86px] text-primary-300;
+    @apply rounded text-primary-300;
   }
 
   .section_padding {
