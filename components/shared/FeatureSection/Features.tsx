@@ -17,10 +17,11 @@ const Features = () => {
           providing flexible and hassle-free earning opportunity for agents.
         </p>
 
-        <h3 className="h3_bold mt-3">Benefits</h3>
 
-        <div id="Benefits" className="flex-between mt-3 flex-col">
-          {BenefitsList.map((benefits, index) => (
+        <h3 className="mt-10 text-[23px] leading-[20.11px] text-primary-200">Benefits</h3>
+        <div id="Benefits" className="mt-3 flex flex-row justify-between">
+            <div>
+            {BenefitsList.map((benefits, index) => (
             <FeatureCard
               key={index}
               tags={benefits.tags}
@@ -29,6 +30,7 @@ const Features = () => {
               paragraph={benefits.paragraph}
             />
           ))}
+            </div>
         </div>
       </div>
     </section>

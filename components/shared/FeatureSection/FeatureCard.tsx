@@ -11,16 +11,16 @@ interface FeatureCardProps {
 
 const FeatureCard = ({imgURL, heading, tags, paragraph}: FeatureCardProps) => {
   return (
-    <div className="flex-between m-3">
+    <div className="m-3 flex items-center">
         <Image src={imgURL} alt={paragraph} className="mr-5"/>
 
-        <div className="flex-col items-start">
-            <h3 className="text-start font-Roboto text-[14px] font-bold leading-[18.56px] text-primary-200">{heading}</h3>
+        <div className="flex flex-col justify-between">
+            <h3 className="text-start font-Roboto text-[16px] font-bold leading-[18.56px] text-primary-200">{heading}</h3>
             
-             <div className="flex flex-row  justify-center">
+             <div className="inline-flex flex-row">
              {tags.map((item, index)=> (
-                <div key={index + item.id} className="tags mr-3 mt-2.5 bg-primary-100 px-[8.5px] py-[2.71px]">
-                   <p className="text-[11px] leading-[11.65px] max-sm:text-[9px]">{item.text}</p>
+                <div key={index + item.id} className="tags mr-3 mt-3  bg-primary-100 px-[15.5px] py-[2.71px]">
+                   <p className="text-center text-[8.5px] leading-[11.65px]">{item.text}</p>
                 </div>
              ))}
              </div>

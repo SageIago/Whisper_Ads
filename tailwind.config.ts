@@ -15,6 +15,7 @@ const config: Config = {
   				'200': '#040815',
   				'300': '#FFFFFF',
   				'400': '#050505',
+				"500" : "#00944433",
   				DEFAULT: 'hsl(var(--primary))',
   				foreground: 'hsl(var(--primary-foreground))'
   			},
